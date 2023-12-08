@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type d -exec chmod 711 {} \;
+find . -type d -print0 | xargs -0 chmod 711
