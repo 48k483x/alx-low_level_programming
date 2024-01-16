@@ -1,8 +1,15 @@
 #include <stdio.h>
 
-int main(int ac, char **av)
+/**
+ * main - prints the name of the program
+ * @argc: number of arguments
+ * @argv: array of arguments
+ *
+ * Return: Always 0 (Success)
+ */
+int main(int argc __attribute__((unused)), char *argv[])
 {
-    (void)ac;
-    printf("%s\n", *av);
-    return (0);
+	printf("%s\n", *argv);
+
+	return (0);
 }
